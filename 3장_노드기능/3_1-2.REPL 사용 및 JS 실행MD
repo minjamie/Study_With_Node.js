@@ -1,0 +1,29 @@
+#### WIL NODE WITH BOOK
+
+> KEYWORD
+
+- `REPL`이 무엇인지 알고 JS 파일 실행하는 것과 차이를 알아보자
+
+> SUMMARY
+
+- 자바스크립트는 스크립트 언어이므로 미리 컴파일을 하지 않아도 즉석에서 코드를 실행할 수 있다.
+
+#### REPL(Read Eval Print Loop)
+
+- REPL이란 자바스크립트처럼 노드도 `비슷한 콘솔`을 제공하는데, 입력한 코드를 읽고(Read), 해석하고(Eval), 결과물을 반환하고(Print), 종료할 때까지 반복한다(Loop)고 하는 것을 의미한다.
+
+#### REPL(Read Eval Print Loop) 사용하기
+
+- 명령 프롬프트 터미널을 콘솔이라 통칭
+- 입력한 코드를 REPL이 읽고 해석한 뒤 바로 결과물을 출력하며 종료되기 전까지 입력을 기다린다.
+  ![](https://images.velog.io/images/minj9_6/post/8512c916-c54b-4b68-b3a6-300d97579d08/image.png)
+- REPL은 한두 줄짜리 코드를 테스트해보는 용도로는 좋고 여러 줄의 코드를 실행하기에는 불편하다.
+- 긴 코드인 경우에는 코드를 자바스크립트 파일로 만들어 파일을 통째로 실행하는 것이 좋다.
+
+![](https://images.velog.io/images/minj9_6/post/0f31d5d6-a7c4-40e2-b9ee-9047c2014b9a/image.png)
+
+#### JS 파일 실행하기
+
+- 자바스크립트 파일을 만들어 콘솔에서 node [자바스크립트 파일 경로]로 실행한다.
+  ![](https://images.velog.io/images/minj9_6/post/1df801fd-3e5c-4a48-879a-e1db4f17772a/image.png)
+- 콘솔에서 REPL로 들어가는 명령어가 node고, 노드를 통해 파일을 실행하는 명령어는 node [자바스크립트 파일 경로]이다.
