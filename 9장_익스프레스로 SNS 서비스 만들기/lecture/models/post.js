@@ -6,7 +6,7 @@ module.exports = class Post extends Sequelize.Model {
       {
         content: {
           type: Sequelize.STRING(140),
-          allowNull: true,
+          allowNull: false,
         },
         img: {
           type: Sequelize.STRING(200),
@@ -17,14 +17,15 @@ module.exports = class Post extends Sequelize.Model {
         sequelize,
         timestamps: true,
         underscored: false,
-        modelName: "User",
-        tableName: "users",
+        modelName: "Post",
+        tableName: "posts",
         paranoid: false,
         charset: "utf8mb4",
         collate: "utf8mb4_general_ci",
       }
     );
   }
+
   static associate(db) {
     db.Post.belongsTo(db.User);
     db.Post.belongsToMany(db.Hashtag, { through: "PostHashtag" });
